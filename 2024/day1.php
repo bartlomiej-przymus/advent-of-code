@@ -1031,4 +1031,14 @@ foreach ($list1 as $index => $item) {
     $totalDistance += abs($list1[$index] - $list2[$index]);
 }
 
+$similarityScore = 0;
+
+foreach ($list1 as $index => $item) {
+    $valueCount = array_count_values($list2);
+    if(array_key_exists($item, $valueCount)) {
+        $similarityScore += ($item * $valueCount[$item]);
+    }
+}
+
 echo "Total distance between two lists is: " . $totalDistance . "\n";
+echo "Total similarity score is: " . $similarityScore . "\n";
