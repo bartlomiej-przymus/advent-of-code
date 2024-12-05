@@ -194,17 +194,7 @@ function checkForMas(
 
     return false;
 }
-//
-////if row less than 3 we cannot check toward North
-////if row more than 136 we cannot check toward South
-////if column less than 3 we cannot check towards West
-////if column more than 136 we cannot check towards East
-//
-////no NW check if row and col is less than 3
-////no SE check if row and col is more than 136
-////no SW check if col is less than 3 and row is more than 136
-////no NE check if col is more than 136 and row is less than 3
-//$max = 6;
+
 $min = 1;
 $max = 138;
 foreach($wordArray as $row => $rowData) {
