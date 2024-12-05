@@ -169,7 +169,6 @@ foreach(explode("\n", $input) as $row) {
 function xmasCheck(array $input): bool
 {
     $word = implode($input);
-    echo $word . "\n";
 
     return $word == 'XMAS';
 }
@@ -199,8 +198,8 @@ function checkForXmas(
             $count++;
         }
 
-
-$word = [];    }
+        $word = [];
+    }
 
     if ($northEast) {
         for($i = 0; $i < 4; $i++) {
